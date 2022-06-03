@@ -6,9 +6,10 @@
 
 
 .bg-blue{
-    background-color: rgb(79, 168, 196) !important;
+    background-color: rgb(41, 87, 100) !important;
     background-image: linear-gradient(to left, #fff, #00c8ff);
 }
+
 
 .c-w{
     color: #fff;
@@ -34,9 +35,10 @@
 
 
 .card-text{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
+
 
 
 .card-title{
@@ -63,15 +65,21 @@
 }
 
 .card .view button{
-    margin-top: 10px;padding: 10px;
+    margin-top: 25px;
+    padding: 10px;
     background-color: transparent;
     border: 2px solid #000;
     border-radius: 10px;
     font-weight: bold;
     color: #000;
-    overflow: hidden;
+    text-align: center;
+    margin-left: 65px;
     
 
+}
+
+.card .view button:hover{
+    font-size: 16.5px;
 }
 
 .card:hover::after{
@@ -82,7 +90,7 @@
     top: 0;
     left: 0;
     background: inherit;
-    filter: blur(50px)
+    filter: blur(40px)
 }
 
 .card:hover .view{
@@ -117,12 +125,65 @@ footer .footer-content{
     text-align: center;
 }
 
-/* footer .footer-links h5{
-     color: #fff;
-    margin-top: 100px;
-    margin-left: 80px;
-   
-} */
+/* modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    /* width: 100%; Full width
+    height: 100%; Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  .right-modal h1{
+      font-family:  'Lobster', cursive;
+  }
+
+  .right-modal, .right-modal p{
+      margin-top: 15px;
+  }
+
+  .right-modal button{
+      margin-top: 20px;
+      padding: 0.7rem;
+      background: transparent;
+      border: 2px solid black;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.3s ease;
+  }
+
+  .right-modal button:hover{
+      background-color: rgb(245, 236, 236);
+  }
+
+  .right-modal button i{
+      margin-left: 5px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 footer .footer-links a img{
     width: 50px;
