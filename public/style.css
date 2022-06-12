@@ -43,7 +43,8 @@
 
 .card-title{
     margin-left: 10px;
-    color: #df4759;
+    color: #00c8ff;
+    font-size: 15px;
 }
 
 
@@ -68,12 +69,13 @@
     margin-top: 25px;
     padding: 10px;
     background-color: transparent;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     border-radius: 10px;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     text-align: center;
     margin-left: 65px;
+    overflow: hidden;
     
 
 }
@@ -82,20 +84,20 @@
     font-size: 16.5px;
 }
 
-.card:hover::after{
+.cards:hover::after{
     content: "";
     width: 100%;
-    height: 80%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: inherit;
-    filter: blur(40px)
+    background-color: #000;
+    opacity: 0.5;
+    filter: blur(0px)
 }
 
 .card:hover .view{
     display: inline-block;
-    filter: blur(0px);
     z-index: 1;
    
 }
@@ -229,6 +231,14 @@ footer .footer-links a img{
         font-size: 18px;
     
     }
+    .right-modal{
+        margin: 0px !important;
+        margin-top: 5px !important;
+    }
+    .right-modal a button{
+        font-size: 12px;
+        margin-top: 5px !important;
+    }
     .carousel{
         height: 196px !important;
     }
@@ -236,10 +246,154 @@ footer .footer-links a img{
         height: 200px !important;
         object-fit: cover;
     }
+
 }
 
 
 
+/* menu page css */
+
+.menu-card{
+    background-image: url(./images/menubg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+}
+
+.menu-img{
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+    z-index: 2;
+
+}
+
+.menu-img img{
+    width: 100%;
+}
+
+/* why choose us css */
+
+.service{
+    width: 100%;
+}
+
+.service img{
+    width: 100%;
+}
 
 
 
+/* 
+   //////feedback */
+   .feedbackbox{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    padding: 10px 20px ;
+    
+}
+
+.feedBackForm{
+    border-bottom: 2px solid black;
+    width: 400px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 8px 0 0;
+    
+
+}
+.feedName{
+    background-image: linear-gradient(to right , #00c8ff , #fff);
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 5px;
+}
+.feedBackForm .feedBackName , .feedBackCountry , .feedBackEmail , .feedBackMsg{
+    width: 90%;
+    /* margin: px 0; */
+
+}
+.feedBackForm .feedBackName input , .feedBackEmail input{
+    width: 100%;
+    padding: 8px;
+    height: 40px;
+    outline:none;
+    border:none;
+    border-bottom: 2px solid #00c8ff;
+    font-family: 'Roboto';
+    display: block;
+}
+.feedBackForm small{
+    width: 100%;
+    padding: 8px;
+    color: red;
+}
+.feedBackForm select{
+   width: 100%;
+    padding: 8px;
+    height: 40px;
+    outline:none;
+    border:none;
+    border-bottom: 2px solid #00c8ff;
+    font-family: 'Roboto';
+
+}
+
+.feedBackStar{
+    width: 80%;
+    text-align: center;
+    margin: 10px 0;
+
+
+}
+
+.feedBackStar input{
+    border: 1px solid red;
+    display: block;
+    text-align: center;
+    
+}
+.feedBackStar input[type=radio]{
+    width:20px;
+    height: 2em;
+    
+}
+.feedBackMsg p{
+    text-align: center;
+}
+.feedBackMsg textarea{
+    width: 100%;
+    padding:8px ;
+}
+.feedbackbox button{
+    width: 160px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    font-weight:bold ;
+    border: none ;
+    background-image: linear-gradient(to right , #00c8ff ,  lightgrey);    
+    margin-bottom: 15px;
+} 
+.feedbackbox button:hover{
+    background-image: linear-gradient(to right ,   lightgrey , #00c8ff);    
+}
+.feedImage{
+    width:350px;
+}
+  
